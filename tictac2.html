@@ -1,0 +1,82 @@
+<html>
+  <head>
+    <title>Tic Tac Toe</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script language="JavaScript" type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script language="JavaScript" type="text/javascript" src="tictactoe.js"></script>
+
+    <style>
+      .wrapper {
+        margin: 0 auto;
+        background-color: #555;
+        padding: 5%;
+        width: 100%;
+        height: 100%;
+      }
+
+      .gameBody {
+        height: 500px;
+        width: 500px;
+        position: relative;
+        margin: 0 auto;
+      }
+
+      .ticbox {
+        background-color: #efefef;
+        width: 164px;
+        height: 164px;
+        margin: 2px;
+        padding: 24px 0 0 0;
+        position: relative;
+        font-size: 72;
+        text-align: center;
+      }
+      .winLine {
+        background-color: #85d3db;
+      }
+
+      h3 {
+        color: white;
+      }
+
+      .buttons {
+        text-align: center;
+      }
+
+      .btn-primary {
+        background-color: #85d3db;
+        color: #000;
+      }
+
+    </style>
+
+    <body>
+      <div class="wrapper">
+        <div class="gameBody">
+          <div class="row">
+            <div class="col-md-4 ticbox" id="b1"></div>
+            <div class="col-md-4 ticbox" id="b2"></div>
+            <div class="col-md-4 ticbox" id="b3"></div>
+          </div>
+          <div class="row">
+            <div class="col-md-4 ticbox" id="b4"></div>
+            <div class="col-md-4 ticbox" id="b5"></div>
+            <div class="col-md-4 ticbox" id="b6"></div>
+          </div>
+          <div class="row">
+            <div class="col-md-4 ticbox" id="b7"></div>
+            <div class="col-md-4 ticbox" id="b8"></div>
+            <div class="col-md-4 ticbox" id="b9"></div>
+          </div>
+        </div>
+        <div class="buttons">
+          <h3>Pick your mark</h3>
+          <button class="btn btn-primary" id="xButton">x</button>
+          <button class="btn btn-primary" id="oButton">o</button>
+          <div class="winMessage"></div>
+        </div>
+      </div>
+    </body>
+
+    </html>
